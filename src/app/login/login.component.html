@@ -1,0 +1,24 @@
+<div ngClass="Login">
+  <h3>ورود کاربران</h3>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6" dir="rtl">
+        <div class="form-group">
+          <hr>
+          <label style="text-align: right;">نام کاربری: </label>
+          <input (input)="CheckUserName($event)" class="form-control" [(ngModel)]="UserName">
+          <p *ngIf="Allow;">
+            {{result}}
+          </p>
+          <label style="text-align: right;">کلمه عبور: </label>
+          <input class="form-control" [(ngModel)]="Password">
+          <hr>
+          <button class="btn btn-primary"> ورود </button>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+    </div>
+  </div>
+</div>
+

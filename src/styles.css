@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'iranSans';
+  src:url('assets/font/IRANSansWeb.eot') format('eot'),
+  url('assets/font/IRANSansWeb.ttf') format('woff'),
+  url('assets/font/IRANSansWeb.woff') format('truetype');
+}
+body{
+  background-color: #d0edee;
+  font-family: iranSans;
+}
