@@ -9,6 +9,8 @@ import { ServersComponent } from './02 The Basics/servers/servers.component';
 import { LoginComponent } from './login/login.component';
 import { CokpitComponent } from './05 Components & Databinding Deep Dive/cokpit/cokpit.component';
 import { ServerElementComponent } from './05 Components & Databinding Deep Dive/server-element/server-element.component';
+import { MyDirectionDirective } from './07 Directives Deep Dive/my-direction.directive';
+import { UnlessDirective } from './07 Directives Deep Dive/unless.directive';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { ServerElementComponent } from './05 Components & Databinding Deep Dive/
     ServersComponent,
     LoginComponent,
     CokpitComponent,
-    ServerElementComponent
+    ServerElementComponent,
+    MyDirectionDirective,
+    UnlessDirective
   ],
   imports: [
     BrowserModule,
