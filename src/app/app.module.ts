@@ -11,6 +11,10 @@ import { CokpitComponent } from './05 Components & Databinding Deep Dive/cokpit/
 import { ServerElementComponent } from './05 Components & Databinding Deep Dive/server-element/server-element.component';
 import { MyDirectionDirective } from './07 Directives Deep Dive/my-direction.directive';
 import { UnlessDirective } from './07 Directives Deep Dive/unless.directive';
+import { AccountComponent } from './09 Using Services & Dependency Injection/account/account.component';
+import { NewAccountComponent } from './09 Using Services & Dependency Injection/new-account/new-account.component';
+import {AccountsService} from "./09 Using Services & Dependency Injection/Services/accounts.service";
+import {LoggingService} from "./09 Using Services & Dependency Injection/Services/logging.service";
 
 @NgModule({
   declarations: [
@@ -21,14 +25,16 @@ import { UnlessDirective } from './07 Directives Deep Dive/unless.directive';
     CokpitComponent,
     ServerElementComponent,
     MyDirectionDirective,
-    UnlessDirective
+    UnlessDirective,
+    AccountComponent,
+    NewAccountComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [AccountsService, LoggingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
